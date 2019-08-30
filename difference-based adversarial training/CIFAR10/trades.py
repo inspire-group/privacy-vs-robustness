@@ -43,7 +43,7 @@ def trades_loss(model,
             x_adv.requires_grad_()
             with torch.enable_grad():
                 loss_kl = criterion_kl(F.log_softmax(model(x_adv), dim=1),
-                                       F.softmax(model(x_natural), dim=1))
+                                       F.softmax(model(x_natural).detach(), dim=1))
             grad = torch.autograd.grad(loss_kl, [x_adv])[0]
             for idx_batch in range(batch_size):
                 grad_idx = grad[idx_batch]
