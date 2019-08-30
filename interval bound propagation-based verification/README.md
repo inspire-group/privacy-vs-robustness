@@ -1,7 +1,7 @@
 ### About
 This defense method is proposed by [Gowal et al.](https://github.com/deepmind/interval-bound-propagation)
 
-## Additional dependencies
+### Additional dependencies
 dm-sonnet==1.26;  tensorflow-probability==0.5.0
 
 ### Model training
