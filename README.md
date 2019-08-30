@@ -12,7 +12,7 @@ We find out that robust training algorithms tend to increase the membership info
 `inference_utils.py`: defined function of membership infernce based on prediction confidence  
 `util.py`: defined function to prepare Yale Face dataset  
 `membership_inference_results.ipynb`: lists membership inference results  
-* **Inside the folder of each robust training method**  
+* *Inside the folder of each robust training method*  
   `output_utils.py`: defined function to obtain predictions of training test data, in both benign and adversarial settings  
    * *Inside the subfolder of each dataset*  
       `output_performance.ipynb`: obtains model predictions  
