@@ -1,0 +1,28 @@
+{
+  "_comment": "===== MODEL CONFIGURATION =====",
+  "model_dir": "./model",
+
+  "_comment": "===== TRAINING CONFIGURATION =====",
+  "random_seed": 4557077,
+  "max_num_training_steps": 80001,
+  "num_output_steps": 100,
+  "num_summary_steps": 100,
+  "num_checkpoint_steps": 5000,
+  "training_batch_size": 100,
+  "step_size_schedule": [[0, 1e-4], [50000, 1e-5], [65000, 1e-6]],
+  "weight_decay": 0.0002,
+  "momentum": 0.9,
+
+  "_comment": "===== EVAL CONFIGURATION =====",
+  "num_eval_examples": 10000,
+  "eval_batch_size": 200,
+  "eval_on_cpu": false,
+
+  "_comment": "=====ADVERSARIAL EXAMPLES CONFIGURATION=====",
+  "epsilon": 0.1,
+  "k": 8,
+  "a": 1,
+  "random_start": true,
+  "loss_func": "xent",
+  "store_adv_path": "attack.npy"
+}
