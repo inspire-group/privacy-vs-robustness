@@ -6,7 +6,7 @@ This defense method is proposed by [Madry et al.](https://github.com/MadryLab/ci
 `python train_robust.py`: trains a robust classifier
 
 
-### Pretrained modles 
+### Pretrained models 
 [natural Fashion MNIST classifier](http://www.princeton.edu/~liweis/privacy-vs-robustness/PGD_based_adv_train_fmnist_natural.zip)  
 [robust Fashion MNIST classifier](http://www.princeton.edu/~liweis/privacy-vs-robustness/PGD_based_adv_train_fmnist_robust.zip)  
 [natural CIFAR10 classifier](http://www.princeton.edu/~liweis/privacy-vs-robustness/PGD_based_adv_train_cifar10_natural.zip)  
