@@ -41,5 +41,5 @@ def inference_via_confidence(confidence_mtx1, confidence_mtx2, label_vec1, label
             max_accuracy = accuracy_now
             best_precision = ratio1/(ratio1+ratio2)
             best_recall = ratio1
-    print('maximum inference accuracy is:', max_accuracy)
+    print('membership inference accuracy is:', max_accuracy)
     return max_accuracy
